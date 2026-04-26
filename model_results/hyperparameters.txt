@@ -1,0 +1,36 @@
+
+╔══════════════════════════════════════════════════════════════════╗
+║                  HYPERPARAMETER CONFIGURATION                    ║
+╠══════════════════════════════════════════════════════════════════╣
+║                                                                  ║
+║  Isolation Forest                                                ║
+║  ├─ n_estimators:   200                                          ║
+║  ├─ max_samples:    auto                                         ║
+║  ├─ contamination:  0.05 (5% expected anomaly rate)              ║
+║  └─ random_state:   42                                           ║
+║                                                                  ║
+║  Random Forest                                                   ║
+║  ├─ n_estimators:   300                                          ║
+║  ├─ max_depth:      20                                           ║
+║  ├─ min_samples_split: 5                                         ║
+║  ├─ min_samples_leaf:  2                                         ║
+║  ├─ class_weight:   balanced                                     ║
+║  └─ random_state:   42                                           ║
+║                                                                  ║
+║  XGBoost                                                         ║
+║  ├─ n_estimators:   300                                          ║
+║  ├─ max_depth:      10                                           ║
+║  ├─ learning_rate:  0.1                                          ║
+║  ├─ subsample:      0.8                                          ║
+║  ├─ colsample_bytree: 0.8                                       ║
+║  ├─ reg_alpha:      0.1  (L1 regularization)                     ║
+║  ├─ reg_lambda:     1.0  (L2 regularization)                     ║
+║  └─ random_state:   42                                           ║
+║                                                                  ║
+║  Time-Series                                                     ║
+║  ├─ Rolling window (short): 7 days                               ║
+║  ├─ Rolling window (long):  30 days                              ║
+║  ├─ EWMA span:       14 days                                     ║
+║  └─ Spike threshold:  μ + 2σ (30-day rolling)                    ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝

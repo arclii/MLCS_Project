@@ -1,0 +1,22 @@
+============================================================
+  Classification Report — XGBoost
+============================================================
+
+              precision    recall  f1-score   support
+
+         Low       0.82      0.79      0.81       782
+      Medium       0.77      0.79      0.78      1494
+        High       0.76      0.78      0.77      1243
+    Critical       0.72      0.67      0.69       425
+   Emergency       0.70      0.46      0.56        56
+
+    accuracy                           0.77      4000
+   macro avg       0.76      0.70      0.72      4000
+weighted avg       0.77      0.77      0.77      4000
+
+
+Accuracy:        0.7718
+Precision (W):   0.7716
+Recall (W):      0.7718
+F1 (Weighted):   0.7710
+CV Accuracy:     0.7716 ± 0.0032

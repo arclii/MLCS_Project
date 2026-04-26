@@ -1,0 +1,22 @@
+============================================================
+  Classification Report — Random Forest
+============================================================
+
+              precision    recall  f1-score   support
+
+         Low       0.80      0.79      0.80       782
+      Medium       0.77      0.77      0.77      1494
+        High       0.75      0.78      0.77      1243
+    Critical       0.69      0.68      0.69       425
+   Emergency       0.73      0.48      0.58        56
+
+    accuracy                           0.76      4000
+   macro avg       0.75      0.70      0.72      4000
+weighted avg       0.76      0.76      0.76      4000
+
+
+Accuracy:        0.7638
+Precision (W):   0.7639
+Recall (W):      0.7638
+F1 (Weighted):   0.7633
+CV Accuracy:     0.7652 ± 0.0031
